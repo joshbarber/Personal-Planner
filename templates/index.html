@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="login">
+    <div class="center" style='text-align: center;'>
+        <h1>Login To Your Personal Planner</h1>
+    </div>
+
+    <form method=POST action="{{ url_for('login') }}">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" name="username" value="" placeholder="Username or Email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" name="pass" placeholder="Password" required>
+
+  <!--   <p class="submit"><input type="submit" name="commit" value="Login">Login</p> -->
+    <p class="submit"><button type="submit" name="commit" value="Login">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    </form>
+    <br>
+    <div class="login-help">
+        <a href="{{ url_for('register') }}" class="cancelbtn" style='color: white;'>Sign Up or an account</a>
+    </div>
+</div>
+
+{% endblock %}
