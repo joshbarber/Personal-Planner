@@ -1,6 +1,6 @@
 
 
-The language used for developing the website is Python using the Flask framework.
+The language used for developing the website is Python using the Flask framework. This software was designed used the object-oriented MVC pattern.
 
 Special instructions: Make sure you have MongoDB downloaded on your environment. 
                       Download Robo3T and create a connection, name it 'PlannerDB'
